@@ -1,1 +1,76 @@
-booking.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Flawless Finish</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Flawless Finish</div>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Premium Beauty Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-cut"></i>
+                <h3>Wigs & Installation</h3>
+                <p>Expert wig installations for a flawless look.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-eye"></i>
+                <h3>Lashes</h3>
+                <p>Enhance your beauty with stunning lash extensions.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hand-sparkles"></i>
+                <h3>Pedicure & Manicure</h3>
+                <p>Luxury nail care for perfect hands and feet.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Makeup & Hairstyling</h3>
+                <p>Get glam with professional makeup and hairstyling.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-spa"></i>
+                <h3>Nail Care & Foot Spa</h3>
+                <p>Pamper yourself with our soothing nail spa treatments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Flawless Finish. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
